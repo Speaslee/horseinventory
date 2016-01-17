@@ -11,7 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160108004953) do
+ActiveRecord::Schema.define(version: 20160117212758) do
+
+  create_table "horses", force: :cascade do |t|
+    t.string  "name"
+    t.integer "saddle_number"
+    t.string  "color"
+    t.string  "breed"
+    t.string  "string"
+    t.text    "notes"
+    t.string  "picture"
+    t.string  "other_docs"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false

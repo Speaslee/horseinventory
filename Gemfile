@@ -1,8 +1,7 @@
 source 'https://rubygems.org'
-
+ruby '2.2.2'
 gem 'rails', '4.2.4'
 gem 'sass-rails', '~> 5.0'
-gem 'sqlite3'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'slim-rails'
@@ -22,8 +21,10 @@ gem 'rmagick'
 gem 'fog'
 gem 'fog-aws'
 gem 'acts-as-taggable-on', '~> 3.4'
-group :development do
+gem 'figaro'
 
+group :development do
+  gem 'sqlite3'
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'pry-rails'
