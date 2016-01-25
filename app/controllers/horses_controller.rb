@@ -1,4 +1,4 @@
-class HorseController < ActionController::Base
+class HorsesController < ActionController::Base
 
   def index
     @horses = Horse.all
