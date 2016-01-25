@@ -1,0 +1,9 @@
+h1 Horse List
+
+ul
+  -if @horses
+    -@horses.each do |a|
+      li #{link_to a.name, a}
+    =link_to "Add a Horse", new_horse_path(@horse)
+  -else
+    =link_to "Add a Horse", new_horse_path(@horse)
