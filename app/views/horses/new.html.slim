@@ -1,1 +1,49 @@
 H1 New Horse
+= form_for Horse.new do |f|
+  h4 Name
+  =f.text_area :name, class: "form-control", rows: 1
+  h4 Birthday
+    = f.datetime_field :birthday, class: 'form-control'
+    
+  h4 Color
+    ul.menu
+      li Appaloosa
+      li Bay
+      li Black
+      li Dark Bay
+      li Brindle
+      li Brown
+      li Buckskin
+      li Chestnut
+      li Dun
+      li Grullo
+      li Red Dun
+      li Yellow Dun
+      li Sorrel
+      li Gray
+      li Dapple Gray
+      li Red Roan
+      li Blue Roan
+      li Palomino
+      li Pinto
+      li White
+  h4 Breed
+    ul.menu
+      li Quarter Horse
+      li American Paint Horse
+      li American Standard Bread Horse
+      li Appaloosa Horse
+      li Arabian Horse
+      li Clydesdale
+      li Draft
+      li Morgan
+      li Mustang
+      li Pinto
+      li Pony
+      li Thoroghbred
+  h4 Saddle Number
+  =f.text_area :saddle_number, class: "form-control", rows: 1
+  h4 String
+  h4 Notes
+  =f.text_area :notes, class: "form-control", rows: 5
+  button.btn.btn-primary Post
