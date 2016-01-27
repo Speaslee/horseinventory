@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160125211359) do
+ActiveRecord::Schema.define(version: 20160127220918) do
 
   create_table "horses", force: :cascade do |t|
     t.string   "name"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 20160125211359) do
     t.string   "other_docs"
     t.datetime "birthday"
     t.integer  "age"
+    t.boolean  "archived"
   end
 
   create_table "users", force: :cascade do |t|
