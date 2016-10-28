@@ -1,3 +1,5 @@
 == README
 
-This will be a program for horse inventory
+
+
+This will be a program for horse inventory.
